@@ -58,12 +58,17 @@ footer li {
 
 .flexContainer {
   display: flex;
-  width: 33%;
-  margin: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  
+}
+.div1 {
   padding: 15px;
 }
 
-/* stopped at step 4 part 3 */
+
+
+/* stopped at step 5 part 1 */
 
 
 
