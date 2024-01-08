@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #E7D1B5;
 }
 header {
   background-color: #373738;
@@ -12,6 +13,7 @@ header ul {
 header li {
   display: inline-block;
   padding: 0px 5px;
+  font-size: 20px;
 }
 header p {
   display: inline-block;
@@ -25,8 +27,8 @@ header p {
   height: 300px;
 }
 .skillsimg {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 .content {
   max-width: 300px;
@@ -54,26 +56,46 @@ footer ul {
 footer li {
   display: inline-block;
   padding: 0px 7px;
-}
-
-.flexContainer {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  
+  font-size: 20px;
 }
 .div1 {
   padding: 15px;
 }
+.flexContainer {
+  display: flex;
+  justify-content: center;
+}
 .img1 {
   width: 300px;
-  height: 300px;
+  height: 335px;
+}
+h1, h3, h4 {
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+}
+.workGrid {
+  display: grid;
+}
+p {
+  font-size: 18px;
+}
+.myWork {
+  text-align: center;
 }
 
 
 
 
-/* stopped at step 5 part 1 */
+
+/* stopped at step 5 part 4 
+  
+  WORKED AS A GRID INCASE I BREAK SOMETHING
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  margin: 0;                                    */
 
 
 
