@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #E7D1B5;
+  background-color: indianred;
 }
 header {
   background-color: #373738;
@@ -38,11 +38,22 @@ header p {
   text-align: center;
 }
 button {
-  padding: 15px;
-  background-color: #373738;
-  color: whitesmoke;
-  font-size: 15px;
-  border-radius: 4px;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 footer {
   background-color: #373738;
@@ -58,48 +69,102 @@ footer li {
   padding: 0px 7px;
   font-size: 20px;
 }
-.div1 {
-  padding: 15px;
-}
 .flexContainer {
   display: flex;
-  justify-content: center;
+  padding: 30px;
+  background-color: indianred;
 }
-.img1 {
+.flexContainer div {
+  width: 33%;
+  padding: 15px;
+}
+.mySkills {
+  background-color: indianred;
+}
+.img1, .img2, .img3 {
   width: 300px;
   height: 335px;
 }
-h1, h3, h4 {
+h1, h3 {
   text-align: center;
-  padding: 5px;
+  padding: 25px 15px;
   font-size: 30px;
-}
-.workGrid {
-  display: grid;
 }
 p {
   font-size: 18px;
 }
 .myWork {
-  text-align: center;
+  padding: 60px 30px;
+  padding-top: 0px;
+  background-color: #E7D1B5;
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas: 
+  "img11 content1"
+  "img21 content2"
+  "img31 content3"
+  ;
+}
+.workGrid img {
+  margin: 0 auto;
+  display: block;
+  width: 300px;
+  height: 335px;
+}
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
+.img11 {
+  grid-area: img11;
+}
+.img21 {
+  grid-area: img21;
+}
+.img31 {
+  grid-area: img31;
+}
+h4 {
+  font-size: 25px;
 }
 
 
 
 
 
-/* stopped at step 5 part 4 
-  
-  WORKED AS A GRID INCASE I BREAK SOMETHING
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin-top: 10px;
-  justify-content: center;
-  margin: 0;                                    */
-
-
-
-
-/* New code :) */
-
-/* Test Test */
+@media only screen and (max-width: 800px) {
+  .flexContainer {
+    flex-direction: column;
+  }
+  .flexContainer div {
+    width: 100%;
+    padding: 15px;
+  }
+  .workGrid {
+    grid-template-rows: 300px 300px 300px
+    300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "img11"
+    "content1"
+    "img21"
+    "content2"
+    "img31"
+    "content3"
+    ;
+  }
+  .projectButton {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 15px;
+  }
+}
